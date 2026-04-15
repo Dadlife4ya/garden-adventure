@@ -1,0 +1,133 @@
+:root {
+  color-scheme: light;
+  --green-dark: #1f5f3f;
+  --green: #2f8f58;
+  --green-soft: #e9f5ee;
+  --text: #1c1c1c;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.5;
+  background: #f8faf8;
+}
+
+.hero {
+  background: linear-gradient(rgba(17, 56, 36, 0.7), rgba(17, 56, 36, 0.7)),
+    url("https://images.unsplash.com/photo-1599685315640-6b7f89f5c962?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
+  color: var(--white);
+  padding: 1.25rem 1.25rem 5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.button {
+  background: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-top: 4rem;
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0.25rem 0 0.8rem;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.section-alt {
+  background: var(--green-soft);
+  border-top: 1px solid #d8e9de;
+  border-bottom: 1px solid #d8e9de;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid #e2ebe4;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h4 {
+  margin-top: 0;
+}
+
+.benefits {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.benefits li + li {
+  margin-top: 0.6rem;
+}
+
+.footer {
+  background: var(--green-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+}
+
+.footer a {
+  color: #c7f3d8;
+}
+
+.copyright {
+  opacity: 0.8;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
