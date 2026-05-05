@@ -1,1 +1,1 @@
-# garden-adventure
+cd garden-adventure
